@@ -59,6 +59,7 @@ Socket programming finds applications in various domains, including web developm
 
 ## PROGRAM
 CLIENT:
+```
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
@@ -74,15 +75,16 @@ continue
 else:
 c.close()
 break
-
+```
 SERVER:
+```
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
 while True:
  print(s.recv(1024).decode())
  s.send("Acknowledgement Recived".encode())
-
+```
  ## OUTPUT
  CLIENT:
  ![Screenshot 2024-04-27 104541](https://github.com/deesk13/SocketStudy/assets/150927063/9fa67160-2fcc-46fd-90a1-ee8fe4174cb0)
