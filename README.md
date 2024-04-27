@@ -1,5 +1,9 @@
 # Ex.No:1a  			Study of Socket Programming
 
+NAME: DEVA DHARSHINI I
+REGISTER NO: 212223240026
+DEPARTMENT: AIML
+
 ## Aim: 
 To perform a study on Socket Programming
 ## Introduction:
@@ -53,6 +57,38 @@ Socket programming finds applications in various domains, including web developm
 4.	Networked Games: Online multiplayer games rely on socket programming to facilitate communication between game clients and servers.
 5.	RPC mechanisms: which allow processes to execute code on a remote server, often use socket programming for communication.
 
+## PROGRAM
+CLIENT:
+import socket
+s=socket.socket()
+s.bind(('localhost',8000))
+s.listen(5)
+c,addr=s.accept()
+while True:
+i=input("Enter a data: ")
+c.send(i.encode())
+ack=c.recv(1024).decode()
+if ack:
+print(ack)
+continue
+else:
+c.close()
+break
 
+SERVER:
+import socket
+s=socket.socket()
+s.connect(('localhost',8000))
+while True:
+ print(s.recv(1024).decode())
+ s.send("Acknowledgement Recived".encode())
+
+ ## OUTPUT
+ CLIENT:
+ ![Screenshot 2024-04-27 104541](https://github.com/deesk13/SocketStudy/assets/150927063/9fa67160-2fcc-46fd-90a1-ee8fe4174cb0)
+
+ SERVER:
+ ![Screenshot 2024-04-27 104600](https://github.com/deesk13/SocketStudy/assets/150927063/772f4b87-364c-4b47-ae59-f8087e640553)
+ 
 ## Result:
 Thus the study of Socket Programming Completed Successfully
