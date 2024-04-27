@@ -1,4 +1,4 @@
-# Ex.No:1a  			Study of Socket Programming
+# Ex.No:1a   			Study of Socket Programming
 
 NAME: DEVA DHARSHINI I
 
