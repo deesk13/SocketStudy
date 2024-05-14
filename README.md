@@ -1,6 +1,6 @@
 # Ex.No:1a   			Study of Socket Programming
 
-NAME: DEVA DHARSHINI I
+NAME: DEVA DHARSHINI I 
 
 REGISTER NO: 212223240026
 
